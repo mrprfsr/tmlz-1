@@ -14,12 +14,11 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '21818317'))
 API_HASH = environ.get('API_HASH', 'bc6ab154300cc41fe127ca4d658dc75d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5407827904:AAGrFnYi78l-Pu3rDm-wpRFeaZB4czzKb4c')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5429528025:AAHU8KjoWQaOXIargD4k_SJYVNGJyBeV584')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/35a68f3cd477a6776e089.jpg https://telegra.ph/file/0d6568ea04e079ad7e6bf.jpg https://telegra.ph/file/f9e1e7b34cbd8baff7b10.jpg https://telegra.ph/file/b582f7311d72ed3e60075.jpg https://telegra.ph/file/ad5e8b295f4c69891cd17.jpg https://telegra.ph/file/9014ba7fe89a4dfebf89e.jpg https://telegra.ph/file/90a8b06e67a5e8ae93aca.jpg https://telegra.ph/file/ed704674eb76bf97a64cf.jpg https://telegra.ph/file/c36b9df778b041b98a9b1.jpg https://telegra.ph/file/74faee934590af2d8df9d.jpg https://telegra.ph/file/88648e41b8328021e442b.jpg https://telegra.ph/file/b8d748278778376189873.jpg https://telegra.ph/file/0b3e50f8bcf30afb26cad.jpg https://telegra.ph/file/750035e745a5dd52198b3.jpg https://telegra.ph/file/6e6693e244d5fc958e322.jpg https://telegra.ph/file/85d8846b4e08fafb62a2e.jpg https://telegra.ph/file/976c9475eae78bbd03d96.jpg https://telegra.ph/file/4cc6147bec045873cac7a.jpg https://telegra.ph/file/6f8cc82170d704ad40ee9.jpg https://telegra.ph/file/06eaa902bffd79209658e.jpg https://telegra.ph/file/14f3c00387f6b3c16d425.jpg https://telegra.ph/file/7d5264428089f785d3d35.jpg')).split()
-
+PICS = (environ.get('PICS', 'https://telegra.ph/file/5a35d2371dbe5b9067ce5.jpg https://telegra.ph/file/5f0812e5de29bbb0f335e.jpg https://telegra.ph/file/da0aa976fc4f6e7c1e3d1.jpg https://telegra.ph/file/213d1ba3604ae15926ff8.jpg https://telegra.ph/file/1640c62b3a1ea05c74855.jpg https://telegra.ph/file/b730f1b51690a5ad6d210.jpg https://telegra.ph/file/c76d09ed2567a09832162.jpg https://telegra.ph/file/f5fda371f75961fc4f55f.jpg https://telegra.ph/file/c1841a9727eae32933eb8.jpg https://telegra.ph/file/01985d5ddd0af3801fb2d.jpg https://telegra.ph/file/e7f26539726494f95ae60.jpg https://telegra.ph/file/3f1e9bd96cb7470c56411.jpg https://telegra.ph/file/80218bb4714853738edae.jpg https://telegra.ph/file/5e9efb6a39d4b7cd3d9ce.jpg https://telegra.ph/file/58fc75d36b89a2842ef5f.jpg https://telegra.ph/file/dc9345074429391bdce7e.jpg https://telegra.ph/file/137156bd5c2aa3cfdbb02.jpg https://telegra.ph/file/44d17769d7cdcf61f29f0.jpg https://telegra.ph/file/4f2dc6494c259a8d4f172.jpg https://telegra.ph/file/168ceddd3c6d790a8d8e1.jpg').split()
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5650200786 5681376068').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
