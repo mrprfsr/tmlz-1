@@ -17,7 +17,7 @@ API_HASH = environ.get('API_HASH', 'bc6ab154300cc41fe127ca4d658dc75d')
 BOT_TOKEN = environ.get('BOT_TOKEN', '5407827904:AAGrFnYi78l-Pu3rDm-wpRFeaZB4czzKb4c')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/35a68f3cd477a6776e089.jpg https://telegra.ph/file/0d6568ea04e079ad7e6bf.jpg https://telegra.ph/file/f9e1e7b34cbd8baff7b10.jpg https://telegra.ph/file/b582f7311d72ed3e60075.jpg https://telegra.ph/file/ad5e8b295f4c69891cd17.jpg https://telegra.ph/file/9014ba7fe89a4dfebf89e.jpg https://telegra.ph/file/90a8b06e67a5e8ae93aca.jpg https://telegra.ph/file/ed704674eb76bf97a64cf.jpg https://telegra.ph/file/c36b9df778b041b98a9b1.jpg https://telegra.ph/file/74faee934590af2d8df9d.jpg https://telegra.ph/file/88648e41b8328021e442b.jpg https://telegra.ph/file/b8d748278778376189873.jpg https://telegra.ph/file/0b3e50f8bcf30afb26cad.jpg https://telegra.ph/file/750035e745a5dd52198b3.jpg https://telegra.ph/file/6e6693e244d5fc958e322.jpg https://telegra.ph/file/85d8846b4e08fafb62a2e.jpg https://telegra.ph/file/976c9475eae78bbd03d96.jpg https://telegra.ph/file/4cc6147bec045873cac7a.jpg https://telegra.ph/file/6f8cc82170d704ad40ee9.jpg https://telegra.ph/file/06eaa902bffd79209658e.jpg https://telegra.ph/file/14f3c00387f6b3c16d425.jpg https://telegra.ph/file/7d5264428089f785d3d35.jpg')).split()
 
 # Admins, Channels & Users
@@ -31,8 +31,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bat:bat@cluster0.3lkpcix.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://container:container@cluster0.x8edtgx.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
