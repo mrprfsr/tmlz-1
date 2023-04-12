@@ -21,7 +21,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/5a35d2371dbe5b9067ce5.jpg https://telegra.ph/file/5f0812e5de29bbb0f335e.jpg https://telegra.ph/file/da0aa976fc4f6e7c1e3d1.jpg https://telegra.ph/file/213d1ba3604ae15926ff8.jpg https://telegra.ph/file/1640c62b3a1ea05c74855.jpg https://telegra.ph/file/b730f1b51690a5ad6d210.jpg https://telegra.ph/file/c76d09ed2567a09832162.jpg https://telegra.ph/file/f5fda371f75961fc4f55f.jpg https://telegra.ph/file/c1841a9727eae32933eb8.jpg https://telegra.ph/file/01985d5ddd0af3801fb2d.jpg https://telegra.ph/file/e7f26539726494f95ae60.jpg https://telegra.ph/file/3f1e9bd96cb7470c56411.jpg https://telegra.ph/file/80218bb4714853738edae.jpg https://telegra.ph/file/5e9efb6a39d4b7cd3d9ce.jpg https://telegra.ph/file/58fc75d36b89a2842ef5f.jpg https://telegra.ph/file/dc9345074429391bdce7e.jpg https://telegra.ph/file/137156bd5c2aa3cfdbb02.jpg https://telegra.ph/file/44d17769d7cdcf61f29f0.jpg https://telegra.ph/file/4f2dc6494c259a8d4f172.jpg https://telegra.ph/file/168ceddd3c6d790a8d8e1.jpg').split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5650200786 5681376068').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5650200786').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
