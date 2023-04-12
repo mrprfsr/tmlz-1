@@ -1,7 +1,7 @@
 import re
 from os import environ
 
-id_pattern = re.compile(r'^.\d+$')
+id_pattern = re.compile(r'^\d{10}$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "y"]:
         return True
@@ -40,7 +40,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Mx_Support_Bot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>{file_caption}</i>\n\n<b>🍿 Ꭾօաɛʀɛɖ Ɓꪗ: @iPopkarn</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>{file_name}</i>\n\n<b>🍿 Ꭾօաɛʀɛɖ Ɓꪗ: @iPopkarn</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
