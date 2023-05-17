@@ -381,7 +381,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://mdiskshortner.link/api'
+    url = f'https://teraboxshortner.com/api'
     params = {'api': SHORTNER_API,
               'url': link,
               }
